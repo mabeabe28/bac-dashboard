@@ -1,0 +1,58 @@
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+ 
+    .item{
+        width: 20%;
+        height: 250px;
+        margin: 10px 0px;
+      
+        @media (max-width:600px) {
+        width: 100%;
+        }
+
+        $chartColors: #56c7fa, #f76540, #ffcb05, #62cd9f, #b67baa, #c299ff;
+        // @for $i from 1 through length($chartColors) {
+        //     $chartColors: append($chartColors, darken(nth($chartColors, $i), 25));
+        // }
+        $chartColorsLength: length($chartColors);
+    
+        @for $i from 1 through $chartColorsLength {
+            &:nth-of-type(#{$chartColorsLength}n+#{$i}) {
+               
+                .content{
+                    background-color: nth($chartColors, $i);      
+                }
+            }
+            // .person-color-#{$i}{
+            //     background-color: nth($chartColors, $i);      
+            // }
+        }
+
+        .content{
+            height: 100%;
+            margin: 10px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+       
+        
+
+        
+    }
+  }
+  
+
+.App{
+    .title{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+  
