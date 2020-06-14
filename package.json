@@ -13,6 +13,7 @@
     "react": "^16.13.1",
     "react-db-google-sheets": "^2.0.0",
     "react-dom": "^16.13.1",
+    "react-fade-in": "^1.1.0",
     "react-scripts": "3.4.1"
   },
   "scripts": {
