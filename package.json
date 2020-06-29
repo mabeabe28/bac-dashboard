@@ -14,11 +14,12 @@
     "react-db-google-sheets": "^2.0.0",
     "react-dom": "^16.13.1",
     "react-fade-in": "^1.1.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "rewire": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "node ./scripts/build-non-split.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

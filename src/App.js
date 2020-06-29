@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <div className="title">
-        <h1>BRITSH ASIAN CREATIVES</h1>
+        <h1>BRITISH ASIAN CREATIVES</h1>
       </div>
       <Sheet/>
     </div>

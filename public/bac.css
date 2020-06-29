@@ -1,24 +1,24 @@
 body {
   background-color: #ffffff; }
 
-.grid {
+.b-grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%; }
-  .grid .item {
+  .b-grid .item {
     width: 20%;
     height: 250px;
     margin: 10px 0px; }
     @media (max-width: 1050px) and (min-width: 601px) {
-      .grid .item {
+      .b-grid .item {
         width: 25%; } }
     @media (max-width: 800px) {
-      .grid .item {
+      .b-grid .item {
         width: 33.33%; } }
     @media (max-width: 600px) {
-      .grid .item {
+      .b-grid .item {
         width: 100%; } }
-    .grid .item:nth-of-type(6n+1) .content .content-wrapper {
+    .b-grid .item:nth-of-type(8n+1) .b-content .b-content-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -28,7 +28,7 @@ body {
       width: auto;
       background-color: #56c7fa;
       margin: 10px; }
-    .grid .item:nth-of-type(6n+2) .content .content-wrapper {
+    .b-grid .item:nth-of-type(8n+2) .b-content .b-content-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -38,7 +38,7 @@ body {
       width: auto;
       background-color: #f76540;
       margin: 10px; }
-    .grid .item:nth-of-type(6n+3) .content .content-wrapper {
+    .b-grid .item:nth-of-type(8n+3) .b-content .b-content-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -48,7 +48,7 @@ body {
       width: auto;
       background-color: #ffcb05;
       margin: 10px; }
-    .grid .item:nth-of-type(6n+4) .content .content-wrapper {
+    .b-grid .item:nth-of-type(8n+4) .b-content .b-content-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -58,7 +58,7 @@ body {
       width: auto;
       background-color: #62cd9f;
       margin: 10px; }
-    .grid .item:nth-of-type(6n+5) .content .content-wrapper {
+    .b-grid .item:nth-of-type(8n+5) .b-content .b-content-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -68,7 +68,7 @@ body {
       width: auto;
       background-color: #b67baa;
       margin: 10px; }
-    .grid .item:nth-of-type(6n+6) .content .content-wrapper {
+    .b-grid .item:nth-of-type(8n+6) .b-content .b-content-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -78,30 +78,52 @@ body {
       width: auto;
       background-color: #c299ff;
       margin: 10px; }
-    .grid .item .content {
+    .b-grid .item:nth-of-type(8n+7) .b-content .b-content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      height: 100%;
+      width: auto;
+      background-color: #B5D6D6;
+      margin: 10px; }
+    .b-grid .item:nth-of-type(8n+8) .b-content .b-content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      height: 100%;
+      width: auto;
+      background-color: #FBBFCA;
+      margin: 10px; }
+    .b-grid .item .b-content {
       height: 100%;
       color: white;
       font-weight: bold; }
-      .grid .item .content .content-wrapper .name {
+      .b-grid .item .b-content .b-content-wrapper .name {
         font-size: 1.5em; }
-      .grid .item .content .content-wrapper .career {
+      .b-grid .item .b-content .b-content-wrapper .career {
         font-size: 0.7em;
         padding: 10px;
         font-style: italic; }
-      .grid .item .content .content-wrapper .social {
+      .b-grid .item .b-content .b-content-wrapper .social {
         font-size: 0.7em;
         padding: 0px 10px; }
-      .grid .item .content .content-wrapper .other {
+      .b-grid .item .b-content .b-content-wrapper .other {
         font-size: 0.7em;
         padding: 0px 10px; }
 
-.App .title {
-  width: 100%;
-  text-align: center; }
+.App {
+  width: 100%; }
+  .App .title {
+    width: 100%;
+    text-align: center; }
 
-.search {
+.b-search {
   width: 100%;
   text-align: center; }
-  .search input {
+  .b-search input {
     width: 80%;
     height: 50px; }

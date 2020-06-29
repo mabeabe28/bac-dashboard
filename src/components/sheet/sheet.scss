@@ -1,4 +1,4 @@
-.grid{
+.b-grid{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -19,7 +19,7 @@
             width: 100%;
         }
 
-        $chartColors: #56c7fa, #f76540, #ffcb05, #62cd9f, #b67baa, #c299ff;
+        $chartColors: #56c7fa, #f76540, #ffcb05, #62cd9f, #b67baa, #c299ff, #B5D6D6, #FBBFCA;
         // @for $i from 1 through length($chartColors) {
         //     $chartColors: append($chartColors, darken(nth($chartColors, $i), 25));
         // }
@@ -28,8 +28,8 @@
         @for $i from 1 through $chartColorsLength {
             &:nth-of-type(#{$chartColorsLength}n+#{$i}) {
                
-                .content{
-                    .content-wrapper{
+                .b-content{
+                    .b-content-wrapper{
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -48,14 +48,14 @@
             // }
         }
 
-        .content{
+        .b-content{
             height: 100%;
             //margin: 10px;
             color: white;
             font-weight: bold;
            
 
-            .content-wrapper{
+            .b-content-wrapper{
                 .name{
                     font-size: 1.5em;
                 }
@@ -82,15 +82,16 @@
     }
   }
   
-
 .App{
     .title{
         width: 100%;
         text-align: center;
     }
+    width: 100%;
+
 }
 
-  .search{
+  .b-search{
         width: 100%;
         text-align: center;
         input{

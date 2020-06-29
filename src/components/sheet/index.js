@@ -19,11 +19,11 @@ const Hello = props => {
   
     return(
       <div>
-        <div className="search">
+        <div className="b-search">
           <input  type="text" placeholder="Search..."  onChange={(e)=>searchSpace(e)} />
         </div>
 
-        <FadeIn className="grid" childClassName="item">
+        <FadeIn className="b-grid" childClassName="item">
         {props.db['Form Responses 1']
           .filter((data)=>{
             if(search == null)
@@ -42,8 +42,8 @@ const Hello = props => {
               return;
             }
             return(
-              <div className="content" key={key}>
-              <div className="content-wrapper" key={key}>
+              <div className="b-content" key={key}>
+              <div className="b-content-wrapper" key={key}>
                 <div className="name">{data['Name (Full Name if possible)']}</div>
                 <div className="career">{data['Career/Industry']}</div>
                 <div className="social">{data['Social Media Handles ']}</div>

@@ -9,13 +9,13 @@ gulp.task('styles', () => {
         'src/components/**/*.scss'
     ])
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('bac.css'))
+        .pipe(concat('App.css'))
         .pipe(gulp.dest('./public/'));
 });
 
 gulp.task('clean', () => {
     return del([
-        'public/bac.css',
+        'App.css',
     ]);
 });
 
